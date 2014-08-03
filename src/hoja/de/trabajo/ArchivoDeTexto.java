@@ -22,12 +22,12 @@ public class ArchivoDeTexto {
     public void lectura(){
          try
         {
-            fichero = new FileWriter("c:/prueba.txt");
+            fichero = new FileWriter("C:\\Users\\Temp\\Desktop\\Cuarto Semestre\\Algoritmos y estructura de datos\\Hoja de trabajo/archivo.txt");
             pw = new PrintWriter(fichero);
 
             for (int i = 0; i < 10; i++)
                 pw.println("Linea " + i);
-
+//DEFENSIVA
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
