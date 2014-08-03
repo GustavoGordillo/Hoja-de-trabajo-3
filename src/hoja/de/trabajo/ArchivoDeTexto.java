@@ -24,10 +24,14 @@ public class ArchivoDeTexto {
         {
             fichero = new FileWriter("C:\\Users\\Temp\\Desktop\\Cuarto Semestre\\Algoritmos y estructura de datos\\Hoja de trabajo/archivo.txt");
             pw = new PrintWriter(fichero);
-
-            for (int i = 0; i < 10; i++)
-                pw.println("Linea " + i);
-//DEFENSIVA
+                        
+            for (int i = 0; i < 2000; i++){
+                int valorEntero = (int) Math.floor(Math.random()*(2000-10+1)+10);
+                pw.println(valorEntero);
+            }
+                
+                
+//
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -39,7 +43,7 @@ public class ArchivoDeTexto {
            } catch (Exception e2) {
               e2.printStackTrace();
            }
-    
+  
         }
     }
        
