@@ -60,7 +60,7 @@ public class OrdenarTest {
     public void testToString() {
         System.out.println("toString");
         Ordenar instance = new Ordenar();
-        String expResult = "";
+        String expResult = "Los valores son null";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

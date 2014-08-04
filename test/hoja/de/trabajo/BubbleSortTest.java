@@ -32,6 +32,7 @@ public class BubbleSortTest {
     @Test
     public void testSort() {
         System.out.println("Sort");
+        
         int[] data = null;
         int n = 0;
         BubbleSort instance = new BubbleSort();
@@ -47,8 +48,12 @@ public class BubbleSortTest {
      */
     @Test
     public void testSwap() {
+        int[] lista = new int[2001]; 
+        ArchivoDeTexto instance = new ArchivoDeTexto();
+        lista = instance.lectura();
+        
         System.out.println("swap");
-        int[] data = null;
+        int[] data = lista;
         int i = 0;
         int j = 0;
         BubbleSort.swap(data, i, j);
