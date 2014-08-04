@@ -48,11 +48,8 @@ public class QuickSortTest {
     @Test
     public void testSwap() {
         System.out.println("swap");
-        int[] lista = new int[2001]; 
-        ArchivoDeTexto instance = new ArchivoDeTexto();
         
-        lista = instance.lectura();
-        int[] data = lista;
+        int[] data = null;
         int i = 0;
         int j = 0;
         QuickSort.swap(data, i, j);
