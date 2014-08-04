@@ -1,15 +1,9 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package hoja.de.trabajo;
 
 import java.io.*;
 
-/**
- *
- * @author Temp
- */
+
 public class ArchivoDeTexto {
     private FileWriter fichero = null;
     private PrintWriter pw = null;
